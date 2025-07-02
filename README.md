@@ -1,5 +1,5 @@
 
-## Introducing SmartSearchSaaSquatch 
+## Introducing SmartSearchSaaSquatch
 
 A simple, powerful lead-generation tool that uses AI to translate complex, natural language requests into targeted, actionable search queries.
 
@@ -23,6 +23,9 @@ graph TD
     D --> F[Link Generator];
     F --> G[UI: Display Clickable Search Links];
 ```
+## Video
+https://github.com/user-attachments/assets/95f6dd37-64d2-448c-9262-48002bafe962
+
 ## Tech Stack
 
 Language: Python
