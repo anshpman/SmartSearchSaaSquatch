@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import json
 import urllib.parse
 
-# --- AI CORE MODULE (Completed) ---
+
 load_dotenv()
 try:
     genai.configure(api_key=os.environ.get("GOOGLE_API_KEY"))
@@ -39,7 +39,7 @@ def get_structured_data(user_query: str) -> dict:
         print(f"An error occurred: {e}")
         return {"error": "Failed to parse AI response. Please try a different query."}
 
-# --- UI LOGIC ---
+# UI 
 st.set_page_config(page_title="Smart Search", layout="centered")
 st.title("Smart Search 🔎")
 st.write("The AI-Powered Lead Finder. Describe your ideal company in plain English below.")
@@ -56,7 +56,7 @@ if submit_button and user_query:
     if "error" in ai_results:
         st.error(ai_results["error"])
     else:
-        # --- PHASE 3: PRESENTATION LOGIC ---
+        # --- PRESENTATION LOGIC ---
 
         # "Show Your Work" Deconstruction Box
         with st.container(border=True):
